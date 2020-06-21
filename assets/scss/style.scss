@@ -25,17 +25,18 @@ body{
     
 }
 .imgBox{
-    height: 500px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
     
     img{
-        height: 500px;
+        height: 400px;
     }
 }
 .info{
-    display: flex;
+    display: none;
     justify-content: space-around;
     .life1{
         width: 20%;
@@ -64,6 +65,7 @@ body{
 .fight{
     display: flex;
     width: 100%;
+    margin-top: 100px;
     .player{
         width: 40%;
         display: flex;
@@ -71,16 +73,28 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
+        .infoRaceItem{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            p{
+                width: 60%;
+                
+            }
+        }
         .pic{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            width: 100%;
+            width: 80%;
             .imgBox{
                 width: 50%;
             }
             i{
                 color: white;
+                cursor: pointer;
+                z-index: 1000;
             }
         }
     }
@@ -96,7 +110,7 @@ body{
     justify-content: space-between;
     .buttonAction{
         width: 40%;
-        display: flex;
+        display: none;
         justify-content: center;
     }
 }

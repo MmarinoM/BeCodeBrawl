@@ -19,15 +19,16 @@ body {
   width: 100%; }
 
 .imgBox {
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 20px; }
   .imgBox img {
-    height: 500px; }
+    height: 400px; }
 
 .info {
-  display: flex;
+  display: none;
   justify-content: space-around; }
   .info .life1 {
     width: 20%; }
@@ -50,7 +51,8 @@ body {
 
 .fight {
   display: flex;
-  width: 100%; }
+  width: 100%;
+  margin-top: 100px; }
   .fight .player {
     width: 40%;
     display: flex;
@@ -58,15 +60,23 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center; }
+    .fight .player .infoRaceItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .fight .player .infoRaceItem p {
+        width: 60%; }
     .fight .player .pic {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      width: 100%; }
+      width: 80%; }
       .fight .player .pic .imgBox {
         width: 50%; }
       .fight .player .pic i {
-        color: white; }
+        color: white;
+        cursor: pointer;
+        z-index: 1000; }
   .fight .vs {
     width: 20%; }
 
@@ -77,5 +87,5 @@ body {
   justify-content: space-between; }
   .buttonGroup .buttonAction {
     width: 40%;
-    display: flex;
+    display: none;
     justify-content: center; }
