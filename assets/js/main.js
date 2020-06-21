@@ -377,6 +377,8 @@ document.getElementById("CP1item").addEventListener("click",function(){
        document.getElementById("lifeBarP1").style.display = "block";
        document.getElementById("lifeBarP2").style.display = "block";
        document.getElementById("ulList").style.display = "block";
+       document.getElementById("logo").style.display = "none";
+       
        game();
    }
     
@@ -399,6 +401,8 @@ document.getElementById("CP2item").addEventListener("click",function(){
         document.getElementById("lifeBarP1").style.display = "block";
         document.getElementById("lifeBarP2").style.display = "block";
         document.getElementById("ulList").style.display = "block";
+        document.getElementById("logo").style.display = "none";
+        
         game();
     }
    
@@ -426,9 +430,9 @@ function game(){
      // RANDOM POUR SAVOIR QUEL JOUEUR COMMENCE
      let playerTurn = Math.round(Math.random() + 1);
      if(playerTurn == 1){
-         addConsole( player1.name+" commence");
+         addConsole( player1.name+" start");
      }else{
-         addConsole( player2.name+" commence");
+         addConsole( player2.name+" start");
      }
 
 

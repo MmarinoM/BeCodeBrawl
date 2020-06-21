@@ -33,6 +33,7 @@ body{
     text-align: center;
     background-color: blueviolet;
     height: 150px;
+    width: 60%;
     overflow: hidden;
     border-radius: 50px;
 }
@@ -55,15 +56,22 @@ body{
 }
 .info{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     height: 100px;
     .life{
         margin-top: 10px;
+        margin-left: 50px;
         width: 20%;
         display: none;
     }
     .titleConsole{
-        width: 40%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        img{
+           
+            height: 250px;
+        }
     }
     
 }
