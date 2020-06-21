@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeCode Brawl</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,7 +12,7 @@
 <body>
     <div class="container">
         <section class="info">
-            <div class="life" id="lifeBarP1">
+            <div class="animate__animated animate__fadeInLeft life" id="lifeBarP1">
                 <div class="lifeBar">
                     <div class="remainLife green" id="remainLifeP1"></div>
                     <div class="lostLife"></div>
@@ -22,10 +23,10 @@
                 </div>
             </div>
             <div class="titleConsole">
-                <img src="assets/img/becode.svg" alt="logo" id="logo">
-                <ul id="ulList"></ul>
+                <img class="animate__animated animate__tada" src="assets/img/becode.svg" alt="logo" id="logo">
+                <ul class="animate__animated animate__bounceInDown" id="ulList"></ul>
             </div>
-            <div class="life" id="lifeBarP2">
+            <div class="animate__animated animate__fadeInRight life" id="lifeBarP2">
                 <div class="lifeBar">
                     <div class="remainLife green" id="remainLifeP2"></div>
                     <div class="lostLife"></div>
@@ -84,12 +85,12 @@
             </div>
         </section>
         <section class="buttonGroup" id="buttonGroup">
-            <div class="buttonAction">
+            <div class="animate__animated animate__bounceInUp buttonAction">
                 <button class="attack" id="attackP1">Attack</button>
                 <button class="heal" id="healP1">Heal</button>
                 <button class="yield" id="yieldP1">Yield</button>
             </div>
-            <div class="buttonAction">
+            <div class="animate__animated animate__bounceInUp buttonAction">
                 <button class="attack" id="attackP2">Attack</button>
                 <button class="heal" id="healP2">Heal</button>
                 <button class="yield" id="yieldP2">Yield</button>
