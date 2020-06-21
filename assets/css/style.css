@@ -1,0 +1,81 @@
+body {
+  background-color: white;
+  color: black;
+  margin: 0;
+  font-size: 1rem;
+  background-image: url(../img/fond1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "South Park"; }
+
+@font-face {
+  body {
+    font-family: 'South Park';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../font/south.woff") format("woff"); } }
+
+.container {
+  width: 100%; }
+
+.imgBox {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .imgBox img {
+    height: 500px; }
+
+.info {
+  display: flex;
+  justify-content: space-around; }
+  .info .life1 {
+    width: 20%; }
+  .info .titleConsole {
+    width: 40%; }
+  .info .life2 {
+    width: 20%; }
+
+.lifeBar {
+  display: flex;
+  max-width: 300px; }
+  .lifeBar .remainLife {
+    height: 30px;
+    width: 80%;
+    background-color: greenyellow; }
+  .lifeBar .lostLife {
+    height: 30px;
+    width: 20%;
+    background-color: grey; }
+
+.fight {
+  display: flex;
+  width: 100%; }
+  .fight .player {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .fight .player .pic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
+      .fight .player .pic .imgBox {
+        width: 50%; }
+      .fight .player .pic i {
+        color: white; }
+  .fight .vs {
+    width: 20%; }
+
+.buttonGroup {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between; }
+  .buttonGroup .buttonAction {
+    width: 40%;
+    display: flex;
+    justify-content: center; }
