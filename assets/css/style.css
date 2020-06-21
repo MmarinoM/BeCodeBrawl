@@ -80,10 +80,10 @@ body {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 80%; }
+      width: 90%; }
       .fight .player .pic .imgBox {
         margin-top: 20px;
-        width: 70%;
+        width: 75%;
         overflow: hidden; }
       .fight .player .pic i {
         color: white;

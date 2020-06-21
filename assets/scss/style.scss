@@ -100,16 +100,17 @@ body{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            width: 80%;
+            width: 90%;
             .imgBox{
                 margin-top: 20px;
-                width: 70%;
+                width: 75%;
                 overflow: hidden;
             }
             i{
                 color: white;
                 cursor: pointer;
                 z-index: 1000;
+                
             }
         }
         .confirm{
