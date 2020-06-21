@@ -14,6 +14,22 @@ body {
 #charInfoP1item {
   color: #ffbe0b; }
 
+#itemNameP2 {
+  color: #ffbe0b; }
+
+#charInfoP2item {
+  color: #ffbe0b; }
+
+#ulList {
+  display: none;
+  padding-top: 10px;
+  list-style: none;
+  text-align: center;
+  background-color: blueviolet;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50px; }
+
 .container {
   width: 100%; }
 
@@ -32,21 +48,53 @@ body {
   justify-content: space-around;
   height: 100px; }
   .info .life {
+    margin-top: 10px;
     width: 20%;
     display: none; }
   .info .titleConsole {
     width: 40%; }
 
+.hp {
+  display: flex; }
+  .hp p {
+    margin-top: 2px;
+    margin-right: 5px; }
+
+.hp2 {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 300px; }
+  .hp2 p {
+    margin-top: 2px;
+    margin-right: 5px; }
+
+.ulList, li:nth-child(even) {
+  list-style: none;
+  color: violet;
+  text-align: center; }
+
+.ulList, li:nth-child(odd) {
+  list-style: none;
+  color: bisque;
+  text-align: center; }
+
 .lifeBar {
   display: flex;
-  max-width: 300px; }
+  max-width: 300px;
+  border-radius: 20px;
+  overflow: hidden; }
+  .lifeBar .green {
+    background-color: greenyellow; }
+  .lifeBar .orange {
+    background-color: orange; }
+  .lifeBar .red {
+    background-color: orangered; }
   .lifeBar .remainLife {
     height: 30px;
-    width: 80%;
-    background-color: greenyellow; }
+    width: 100%; }
   .lifeBar .lostLife {
     height: 30px;
-    width: 20%;
+    width: 0%;
     background-color: grey; }
 
 .fight {
@@ -99,15 +147,37 @@ body {
       cursor: pointer; }
       .fight .player .confirm button:hover {
         color: #43aa8b; }
+    .fight .player .confirm #CP1item {
+      display: none; }
+    .fight .player .confirm #CP2item {
+      display: none; }
   .fight .vs {
     width: 0%; }
 
 .buttonGroup {
-  margin-top: 100px;
-  margin-bottom: 50px;
   display: none;
-  justify-content: space-between; }
+  justify-content: center; }
   .buttonGroup .buttonAction {
     width: 40%;
     display: flex;
     justify-content: center; }
+    .buttonGroup .buttonAction button {
+      font-family: "south";
+      font-size: 3rem;
+      border: none;
+      background: none;
+      outline: none; }
+    .buttonGroup .buttonAction .attack {
+      color: #caffbf; }
+      .buttonGroup .buttonAction .attack:hover {
+        color: #90be6d; }
+    .buttonGroup .buttonAction .heal {
+      color: #fdffb6;
+      margin-left: 20px;
+      margin-right: 20px; }
+      .buttonGroup .buttonAction .heal:hover {
+        color: #f9c74f; }
+    .buttonGroup .buttonAction .yield {
+      color: #ffadad; }
+      .buttonGroup .buttonAction .yield:hover {
+        color: #f94144; }

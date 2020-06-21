@@ -11,23 +11,33 @@
 <body>
     <div class="container">
         <section class="info">
-            <div class="life">
+            <div class="life" id="lifeBarP1">
                 <div class="lifeBar">
-                    <div class="remainLife"></div>
+                    <div class="remainLife green" id="remainLifeP1"></div>
                     <div class="lostLife"></div>
                 </div>
+                <div class="hp">
+                    <p>HP</p>
+                    <p id="targetHP">100</p>
+                </div>
             </div>
-            <div class="titleConsole"></div>
-            <div class="life">
+            <div class="titleConsole">
+                <ul id="ulList"></ul>
+            </div>
+            <div class="life" id="lifeBarP2">
                 <div class="lifeBar">
-                    <div class="remainLife"></div>
+                    <div class="remainLife green" id="remainLifeP2"></div>
                     <div class="lostLife"></div>
+                </div>
+                <div class="hp2">
+                    <p>HP</p>
+                    <p id="targetHP">100</p>
                 </div>
             </div>
         </section>
         <section class="fight">
             <div class="player">
-                <div class="infoRaceItem">
+                <div class="infoRaceItem" id="infoRaceItemP1">
                     <h2 id="charNameP1">Nick</h2>
                     <p id="charInfoP1">40% more health</p>
                     <h3 id="itemNameP1"></h3>
@@ -36,14 +46,15 @@
                 <div class="pic">
                     <i class="fas fa-caret-left fa-5x" id="leftP1"></i>
                     <i class="fas fa-caret-left fa-5x" id="leftP1item"></i>
-                    <div class="imgBox">
+                    <div class="imgBox" id="imgBox">
                         <img src="assets/img/nick.png" alt="nick" id="picP1">
                     </div>
                     <i class="fas fa-caret-right fa-5x rightP1item" id="rightP1"></i>
                     <i class="fas fa-caret-right fa-5x rightP1item" id="rightP1item"></i>
                 </div>
                 <div class="confirm">
-                    <button id="CP1">CONFIRM</button>
+                    <button id="CP1">CONFIRM character</button>
+                    <button id="CP1item">CONFIRM item</button>
                 </div>
             </div>
             <div class="vs"></div>
@@ -51,7 +62,8 @@
                 <div class="infoRaceItem">
                     
                     <h2 id="charNameP2">Leny</h2>
-                    <p id="charInfoP2">30% chance to reflect the attack back to the opponent. They take damage equal to 50% of the original hit.</p>
+                    <p id="charInfoP2">30% chance to reflect 50% of the attack back to the opponent</p>
+                    <h3 id="itemNameP2"></h3>
                     <p id="charInfoP2item"></p>
                 </div>
                 <div class="pic">
@@ -64,20 +76,22 @@
                     <i class="fas fa-caret-right fa-5x" id="rightP2item"></i>
                 </div>
                 <div class="confirm">
-                    <button id="CP2">CONFIRM</button>
+                    <button id="CP2">CONFIRM character</button>
+                    <button id="CP2item">CONFIRM item</button>
                 </div>
+                
             </div>
         </section>
-        <section class="buttonGroup">
+        <section class="buttonGroup" id="buttonGroup">
             <div class="buttonAction">
-                <button class="attackP1">Attack</button>
-                <button class="healP1">Heal</button>
-                <button class="yieldP1">Yield</button>
+                <button class="attack" id="attackP1">Attack</button>
+                <button class="heal" id="healP1">Heal</button>
+                <button class="yield" id="yieldP1">Yield</button>
             </div>
             <div class="buttonAction">
-                <button class="attackP2">Attack</button>
-                <button class="healP2">Heal</button>
-                <button class="yieldP2">Yield</button>
+                <button class="attack" id="attackP2">Attack</button>
+                <button class="heal" id="healP2">Heal</button>
+                <button class="yield" id="yieldP2">Yield</button>
             </div>
         </section>
     </div>

@@ -20,6 +20,22 @@ body{
 #charInfoP1item{
     color: #ffbe0b;
 }
+#itemNameP2{
+    color: #ffbe0b;
+}
+#charInfoP2item{
+    color: #ffbe0b;
+}
+#ulList{
+    display: none;
+    padding-top: 10px;
+    list-style: none;
+    text-align: center;
+    background-color: blueviolet;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50px;
+}
 .container{
     width: 100%;
     
@@ -42,6 +58,7 @@ body{
     justify-content: space-around;
     height: 100px;
     .life{
+        margin-top: 10px;
         width: 20%;
         display: none;
     }
@@ -50,17 +67,54 @@ body{
     }
     
 }
+.hp{
+    display: flex;
+    p{
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+}
+.hp2{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 300px;
+    p{
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+}
+.ulList, li:nth-child(even){
+    list-style: none;
+    color: violet; 
+    text-align: center;
+}
+.ulList, li:nth-child(odd){
+    list-style: none;
+    color: bisque; 
+    text-align: center;
+}
 .lifeBar{
     display: flex;
     max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    .green{
+        background-color: greenyellow;
+    }
+    .orange{
+        background-color: orange;
+    }
+    .red{
+        background-color: orangered;
+    }
     .remainLife{
         height: 30px;
-        width: 80%;
-        background-color: greenyellow;
+        width: 100%;
+        
     }
     .lostLife{
         height: 30px;
-        width: 20%;
+        width: 0%;
         background-color: grey;
     }
 }
@@ -114,6 +168,7 @@ body{
             }
         }
         .confirm{
+            
             button{
                 font-family: "south";
                 font-size: 2rem;
@@ -126,6 +181,12 @@ body{
                     color: #43aa8b;
                 }
             }
+            #CP1item{
+                display: none;
+            }
+            #CP2item{
+                display: none;
+            }
         }
         
     }
@@ -135,14 +196,40 @@ body{
     }
 }
 .buttonGroup{
-    margin-top: 100px;
-    margin-bottom: 50px;
+    
     display: none;
-    justify-content: space-between;
+    justify-content: center;
     .buttonAction{
         width: 40%;
         display: flex;
         justify-content: center;
+        button{
+            font-family: "south";
+                font-size: 3rem;
+                border: none;
+                background: none;
+                outline: none;
+        }
+        .attack{
+            color: #caffbf;
+            &:hover{
+                color: #90be6d;
+            }
+        }
+        .heal{
+            color: #fdffb6;
+            margin-left: 20px;
+            margin-right: 20px;
+            &:hover{
+                color: #f9c74f;
+            }
+        }
+        .yield{
+            color: #ffadad;
+            &:hover{
+                color: #f94144;
+            }
+        }
     }
 }
 
