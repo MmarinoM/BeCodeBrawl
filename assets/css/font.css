@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'South';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../font/south.woff') format('woff');
+    }
+
+body{
+    font-family: "South";
+}

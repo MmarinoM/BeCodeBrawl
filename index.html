@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BeCode Brawl</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/font.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <div class="container">
         <section class="info">
-            <div class="life1">
+            <div class="life">
                 <div class="lifeBar">
                     <div class="remainLife"></div>
                     <div class="lostLife"></div>
                 </div>
             </div>
             <div class="titleConsole"></div>
-            <div class="life2">
+            <div class="life">
                 <div class="lifeBar">
                     <div class="remainLife"></div>
                     <div class="lostLife"></div>
@@ -29,15 +30,19 @@
                 <div class="infoRaceItem">
                     <h2 id="charNameP1">Nick</h2>
                     <p id="charInfoP1">40% more health</p>
+                    <h3 id="itemNameP1"></h3>
+                    <p id="charInfoP1item"></p>
                 </div>
                 <div class="pic">
                     <i class="fas fa-caret-left fa-5x" id="leftP1"></i>
+                    <i class="fas fa-caret-left fa-5x" id="leftP1item"></i>
                     <div class="imgBox">
                         <img src="assets/img/nick.png" alt="nick" id="picP1">
                     </div>
                     <i class="fas fa-caret-right fa-5x rightP1item" id="rightP1"></i>
+                    <i class="fas fa-caret-right fa-5x rightP1item" id="rightP1item"></i>
                 </div>
-                <div class="confirmP1">
+                <div class="confirm">
                     <button id="CP1">CONFIRM</button>
                 </div>
             </div>
@@ -47,16 +52,19 @@
                     
                     <h2 id="charNameP2">Leny</h2>
                     <p id="charInfoP2">30% chance to reflect the attack back to the opponent. They take damage equal to 50% of the original hit.</p>
+                    <p id="charInfoP2item"></p>
                 </div>
                 <div class="pic">
                     <i class="fas fa-caret-left fa-5x" id="leftP2"></i>
+                    <i class="fas fa-caret-left fa-5x" id="leftP2item"></i>
                     <div class="imgBox">
                         <img src="assets/img/leny.png" alt="leny" id="picP2">
                     </div>
                     <i class="fas fa-caret-right fa-5x" id="rightP2"></i>
+                    <i class="fas fa-caret-right fa-5x" id="rightP2item"></i>
                 </div>
-                <div class="confirmP2">
-                    <button>CONFIRM</button>
+                <div class="confirm">
+                    <button id="CP2">CONFIRM</button>
                 </div>
             </div>
         </section>

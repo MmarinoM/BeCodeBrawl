@@ -1,23 +1,24 @@
 body{
     background-color: white;
-    color: black;
+    color: white;
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.4rem;
     //SOUTH PARK FONT
     
-    @font-face {
-        font-family: 'South Park';
-        font-style: normal;
-        font-weight: normal;
-        src: url('../font/south.woff') format('woff');
-        }
 
 
     background-image: url(../img/fond1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "South Park";
+    background-position: center;
+    
 
+}
+#itemNameP1{
+    color: #ffbe0b;
+}
+#charInfoP1item{
+    color: #ffbe0b;
 }
 .container{
     width: 100%;
@@ -27,26 +28,27 @@ body{
 .imgBox{
     height: 400px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
     align-items: center;
     margin-bottom: 20px;
     
     img{
-        height: 400px;
+        width: 1000px;
     }
 }
 .info{
-    display: none;
+    display: flex;
     justify-content: space-around;
-    .life1{
+    height: 100px;
+    .life{
         width: 20%;
+        display: none;
     }
     .titleConsole{
         width: 40%;
     }
-    .life2{
-        width: 20%;
-    }
+    
 }
 .lifeBar{
     display: flex;
@@ -64,6 +66,7 @@ body{
 }
 .fight{
     display: flex;
+    justify-content: center;
     width: 100%;
     margin-top: 100px;
     .player{
@@ -76,10 +79,20 @@ body{
         .infoRaceItem{
             display: flex;
             flex-direction: column;
-            
+            height: 200px;
+            width: 100%;
             align-items: center;
+            h2{
+                margin: 0;
+            }
+            h3{
+                margin-bottom: 0;
+            }
             p{
-                width: 60%;
+                line-height: 20px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+                width: 70%;
                 
             }
         }
@@ -89,7 +102,9 @@ body{
             align-items: center;
             width: 80%;
             .imgBox{
-                width: 50%;
+                margin-top: 20px;
+                width: 70%;
+                overflow: hidden;
             }
             i{
                 color: white;
@@ -97,20 +112,35 @@ body{
                 z-index: 1000;
             }
         }
+        .confirm{
+            button{
+                font-family: "south";
+                font-size: 2rem;
+                border: none;
+                background: none;
+                outline: none;
+                color: #90be6d;
+                cursor: pointer;
+                &:hover{
+                    color: #43aa8b;
+                }
+            }
+        }
+        
     }
     
     .vs{
-        width: 20%;
+        width: 0%;
     }
 }
 .buttonGroup{
     margin-top: 100px;
     margin-bottom: 50px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     .buttonAction{
         width: 40%;
-        display: none;
+        display: flex;
         justify-content: center;
     }
 }

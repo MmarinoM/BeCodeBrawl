@@ -6,10 +6,17 @@ let galleryChoice1 = [
 ];
 i =0;
 ii = 0;
+// VARIABLE POUR APRES PREMIER CONFIRM
+let choiceCharacterP1;
+let itemGallery = [];
 
+//
 picP1 = document.getElementById("picP1");
 picP2 = document.getElementById("picP2");
-
+document.getElementById("rightP1item").style.display ="none";
+document.getElementById("rightP2item").style.display ="none";
+document.getElementById("leftP1item").style.display ="none";
+document.getElementById("leftP2item").style.display ="none";
 
 document.getElementById("rightP1").addEventListener("click",function(){
     i++;
@@ -54,24 +61,86 @@ document.getElementById("leftP2").addEventListener("click",function(){
     
     console.log(i);
 });
-
+document.getElementById("leftP1item").addEventListener("click",function(){
+    i--;
+    if(i < 0){
+        i=3;
+    }
+    picP1.src = itemGallery[i];
+    console.log(i);
+    console.log(itemGallery);
+    itemNameP1 = document.getElementById("itemNameP1");
+    switch(i){
+        case 0 :
+            itemP1info.innerHTML = "30% chance to dodge an attack";
+            itemNameP1.innerHTML = "Wings";
+            
+        break;
+        case 1 :
+            itemP1info.innerHTML = "30% chance to attack twice";
+            itemNameP1.innerHTML = "Axe";
+        break;
+        case 2 :
+            itemP1info.innerHTML = "30% more damage";
+            itemNameP1.innerHTML = "Sword";
+        break;
+        case 3 :
+            itemP1info.innerHTML = "20% increase in healing";
+            itemNameP1.innerHTML = "Magic Stick";
+        break;
+    };
+});
+document.getElementById("rightP1item").addEventListener("click",function(){
+    i++;
+    if(i == itemGallery.length){
+        i=0;
+    }
+    picP1.src = itemGallery[i];
+    switch(i){
+        case 0 :
+            itemP1info.innerHTML = "30% chance to dodge an attack";
+            itemNameP1.innerHTML = "Wings";
+            
+        break;
+        case 1 :
+            itemP1info.innerHTML = "30% chance to attack twice";
+            itemNameP1.innerHTML = "Axe";
+        break;
+        case 2 :
+            itemP1info.innerHTML = "30% more damage";
+            itemNameP1.innerHTML = "Sword";
+        break;
+        case 3 :
+            itemP1info.innerHTML = "20% increase in healing";
+            itemNameP1.innerHTML = "Magic Stick";
+        break;
+    };
+    
+});
 
 
 // confirm premiere phase
-document.getElementById("CP1").addEventListener("click",function(){
+document.getElementById("CP1").addEventListener("click",function(){  
+    document.getElementById("rightP1").style.display = "none";
+    document.getElementById("leftP1").style.display = "none";
+
+    document.getElementById("leftP1item").style.display = "flex";
+    document.getElementById("rightP1item").style.display = "flex";
+    
     choiceCharacterP1 = "assets/img/"+document.getElementById("picP1").alt;
-    alert("bonjour");
-    let itemGallery = [
+    console.log(choiceCharacterP1);
+    itemGallery = [
         choiceCharacterP1+"1.png",
         choiceCharacterP1+"2.png",
         choiceCharacterP1+"3.png",
         choiceCharacterP1+"4.png",
-    ]
+    ];
     i= 0;
     ii=0;    
     picP1.src = itemGallery[0];
-    ;
-    document.getElementById("CP1").id = "";
+    itemP1info = document.getElementById("charInfoP1item");
+    
+    
 });
 
 

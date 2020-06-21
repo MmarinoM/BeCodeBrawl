@@ -1,19 +1,18 @@
 body {
   background-color: white;
-  color: black;
+  color: white;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.4rem;
   background-image: url(../img/fond1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "South Park"; }
+  background-position: center; }
 
-@font-face {
-  body {
-    font-family: 'South Park';
-    font-style: normal;
-    font-weight: normal;
-    src: url("../font/south.woff") format("woff"); } }
+#itemNameP1 {
+  color: #ffbe0b; }
+
+#charInfoP1item {
+  color: #ffbe0b; }
 
 .container {
   width: 100%; }
@@ -21,21 +20,22 @@ body {
 .imgBox {
   height: 400px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
   margin-bottom: 20px; }
   .imgBox img {
-    height: 400px; }
+    width: 1000px; }
 
 .info {
-  display: none;
-  justify-content: space-around; }
-  .info .life1 {
-    width: 20%; }
+  display: flex;
+  justify-content: space-around;
+  height: 100px; }
+  .info .life {
+    width: 20%;
+    display: none; }
   .info .titleConsole {
     width: 40%; }
-  .info .life2 {
-    width: 20%; }
 
 .lifeBar {
   display: flex;
@@ -51,6 +51,7 @@ body {
 
 .fight {
   display: flex;
+  justify-content: center;
   width: 100%;
   margin-top: 100px; }
   .fight .player {
@@ -63,29 +64,50 @@ body {
     .fight .player .infoRaceItem {
       display: flex;
       flex-direction: column;
+      height: 200px;
+      width: 100%;
       align-items: center; }
+      .fight .player .infoRaceItem h2 {
+        margin: 0; }
+      .fight .player .infoRaceItem h3 {
+        margin-bottom: 0; }
       .fight .player .infoRaceItem p {
-        width: 60%; }
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        width: 70%; }
     .fight .player .pic {
       display: flex;
       justify-content: space-around;
       align-items: center;
       width: 80%; }
       .fight .player .pic .imgBox {
-        width: 50%; }
+        margin-top: 20px;
+        width: 70%;
+        overflow: hidden; }
       .fight .player .pic i {
         color: white;
         cursor: pointer;
         z-index: 1000; }
+    .fight .player .confirm button {
+      font-family: "south";
+      font-size: 2rem;
+      border: none;
+      background: none;
+      outline: none;
+      color: #90be6d;
+      cursor: pointer; }
+      .fight .player .confirm button:hover {
+        color: #43aa8b; }
   .fight .vs {
-    width: 20%; }
+    width: 0%; }
 
 .buttonGroup {
   margin-top: 100px;
   margin-bottom: 50px;
-  display: flex;
+  display: none;
   justify-content: space-between; }
   .buttonGroup .buttonAction {
     width: 40%;
-    display: none;
+    display: flex;
     justify-content: center; }
