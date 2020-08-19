@@ -152,6 +152,3 @@ function randomize(min, max)
 {
     return Math.floor(Math.random() * (max - min) + min);
 }
-
-//export { Character, Human, Orc, Elf, Vampire, Item, Boots, Staff, Sword, Bow };
-
